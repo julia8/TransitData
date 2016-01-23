@@ -1,0 +1,10 @@
+Source file columns:
+tripduration, starttime, stoptime, start station(id, name, lat, long), end station (id, name, lat, long), bikeid, ...
+
+Step 1: Mapper - each line becomes 2 lines:
+${start-station-id}-${start-hour}-start, 1
+${end-station-id}-${end-hour}-end, 1
+
+Step 2: Use Unix sort command
+
+Step 3: sum by reducing
