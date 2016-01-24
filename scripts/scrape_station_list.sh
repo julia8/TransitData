@@ -1,0 +1,1 @@
+python ../transitData/station_list.py | sort | uniq > stations.csv
